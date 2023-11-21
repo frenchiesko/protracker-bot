@@ -1,12 +1,13 @@
-# Choosing an image for you container.
-FROM python:3.11.0
-# Setting your working directory
+FROM python:3.11
+
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
 WORKDIR /app
-# This command would copy EVERY FILE from your project folder into your container, so be careful.
-COPY . .
-# Installing needed packages and dependencies.**
-RUN pip install -r requirements.txt
-# This command basically executes your main file with Python.
+COPY . /app
+
+COPY .env /app/.env
+
+ENV TELEGRAM_TOKEN=TOKEN
+
 CMD ["python", "main.py"]
-# Setting a port for your app communications with Telegram servers.
-EXPOSE 80/tcp
