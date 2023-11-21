@@ -66,11 +66,6 @@ This bot serves as a simple and intuitive task scheduler, offering brief analyti
 **Machine Learning and Analytics:** pandas, numpy, scikit-learn, matplotlib, seaborn
 
 
-## Demo
-
-Insert gif or link to demo
-
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
