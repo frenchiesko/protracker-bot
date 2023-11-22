@@ -94,17 +94,17 @@ class TaskManager:
             if lang == 'English':
                 bot.send_message(message.from_user.id, "🔎 Here's your personalized analysis of the graphs!")
 
-                priority = [task[5] for task in self.storage if task[5] in ["🔴 Low", "🟡 Medium", "🟢 High"]]
-                when_start = [task[6] for task in self.storage if task[6] in ["🤷 Unknown", "💭 During the day", "⚡️ Today"]]
-                independent = [task[7] for task in self.storage if task[7] in ['Yes', 'No']]
-                diff_lvl = [task[8] for task in self.storage if task[8] in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]]
+                priority = [task[5] for task in self.storage]
+                when_start = [task[6] for task in self.storage]
+                independent = [task[7] for task in self.storage]
+                diff_lvl = [task[8] for task in self.storage]
             elif lang == 'Russian':
                 bot.send_message(message.from_user.id, "🔎 Вот ваш персональный анализ графиков!")
 
-                priority = [task[5] for task in self.storage if task[5] in ["🔴 Низкий", "🟡 Средний", "🟢 Высокий"]]
-                when_start = [task[6] for task in self.storage if task[6] in ["🤷 Отложено", "💭 В течение дня", "⚡️ Сегодня"]]
-                independent = [task[7] for task in self.storage if task[7] in ['Да', 'Нет']]
-                diff_lvl = [task[8] for task in self.storage if task[8] in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]]
+                priority = [task[5] for task in self.storage if task[5]]
+                when_start = [task[6] for task in self.storage if task[6]]
+                independent = [task[7] for task in self.storage if task[7]]
+                diff_lvl = [task[8] for task in self.storage if task[8]]
 
             data = pd.DataFrame({'priority': priority, 'when_start': when_start,
                                  'is_independently': independent, 'difficulty_lvl': diff_lvl})
