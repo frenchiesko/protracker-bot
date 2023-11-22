@@ -16,6 +16,11 @@ This bot serves as a simple and intuitive task scheduler, offering brief analyti
 `/analytics` - send a few charts about user's tasks categories
 
 `/task_info` - send information about task (date, priority, difficulty, how many hrs need to get task done)
+
+## Demo
+![Bot working](demo.gif)
+
+
 ## Installation
 
 1. Clone this repository:
