@@ -75,7 +75,7 @@ def info(message):
                          "Присоединяйтесь к "
                          "ProTracker для оптимизации управления задачами и получения информативной аналитики!\n\n🌐 "
                          "GitHub: "
-                         "https://github.com/",
+                         "https://github.com/frenchiesko/protracker-bot",
                          reply_markup=create_markup(current_language))
 
     elif current_language == 'English':
@@ -83,7 +83,7 @@ def info(message):
                          "ProTracker enables effective task management and analytics. Leveraging machine learning, "
                          "this bot employs linear regression to predict task durations.\nPlease note, as an MVP, "
                          "this project may have bugs and will be improving. \nJoin ProTracker to streamline "
-                         "your task management and gain insightful analytics!\n\n🌐 GitHub: https://github.com/",
+                         "your task management and gain insightful analytics!\n\n🌐 GitHub: https://github.com/frenchiesko/protracker-bot",
                          reply_markup=create_markup(current_language))
 
 
