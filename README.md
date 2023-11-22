@@ -59,9 +59,7 @@ This bot serves as a simple and intuitive task scheduler, offering brief analyti
 `task_manager.py` - The file implementing storage, addition, deletion of tasks, displaying task information, and presenting visual analytics
 
 `model.py` - The file where data preprocessing of surveys and tasks occurs, including coefficient computation, data generation, model training, and prediction execution
-## Libraries
-
-**Bot:** telebot, io, os, dotenv
+## Tech stack
 
 **Machine Learning and Analytics:** pandas, numpy, scikit-learn, matplotlib, seaborn
 
