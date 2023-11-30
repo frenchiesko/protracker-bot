@@ -168,7 +168,7 @@ class DataGenerator:
 
     def generate_data(self):
         np.random.seed(42)
-        num_samples = 600
+        num_samples = 1000
 
         categories_speed = ['Slow', 'Moderate', 'Fast']
         categories_priority = ['Low', 'Medium', 'High']
