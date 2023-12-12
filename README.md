@@ -17,8 +17,6 @@ This bot serves as a simple and intuitive task scheduler, offering brief analyti
 
 `/task_info` - send information about task (date, priority, difficulty, how many hrs need to get task done)
 
-## Demo
-![Bot working](demo.gif)
 
 
 ## Bot files
